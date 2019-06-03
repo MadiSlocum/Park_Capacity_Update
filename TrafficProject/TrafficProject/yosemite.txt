@@ -1,0 +1,64 @@
+Yosemite Test Program. This test will consist of 7 test cases. 
+TEST CASE 1: Cars/People enter park. No thresholds are crossed. Note that the program should not produce any output messages.
+Prior to the test: 
+Cars In Park: 0
+People In Park: 0
+
+Cars In Park: 9990
+People In Park: 29975
+
+Test Case #2: Cars/People enter park. People threshold is exceeded but car threshold is not.
+Prior to the test: 
+Cars In Park: 9990
+People In Park: 29975
+
+***Warning, park capacity exceeded!***
+Cars In Park: 9997
+People In Park: 30005
+
+Test Case #3: Cars/People leave park. No thresholds are crossed. 
+Prior to the test: 
+Cars In Park: 9997
+People In Park: 30005
+
+***Good news... there are no longer too many cars in the parking lot***
+Cars In Park: 9995
+People In Park: 30001
+
+TEST 4: Test Case #4: Cars / People leave park.Only people drop below threshold. 
+Prior to the test: 
+Cars In Park: 9995
+People In Park: 30001
+
+***Good news... there are no longer too many people or too many cars at the park***
+Cars In Park: 9990
+People In Park: 29985
+
+TEST 5: Test #5: Cars/People leave park. Cars & people are both above before hand, and this call leaves people above, but cars drops below.
+Prior to the test: 
+
+***Warning, park capacity exceeded!***
+Cars In Park: 10001
+People In Park: 30001
+***Good news... there are no longer too many cars in the parking lot***
+Cars In Park: 9996
+People In Park: 30001
+
+TEST 6: Test #6: Cars/People leave park. Cars & people are both above before hand, and this call leaves both above. 
+Prior to the test: 
+Cars In Park: 9996
+People In Park: 30001
+
+***Warning, park capacity exceeded!***
+Cars In Park: 10004
+People In Park: 30007
+
+TEST 7: Test #7: Cars/People leave park. Cars & people are both above before hand, and this call causes both to fall below their thresholds.
+Prior to the test: 
+Cars In Park: 10001
+People In Park: 30005
+
+***Good news... there are no longer too many people or too many cars at the park***
+Cars In Park: 9997
+People In Park: 29995
+
